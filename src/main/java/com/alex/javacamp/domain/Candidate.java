@@ -14,5 +14,5 @@ public class Candidate {
     private int candidateId;
     private String address;
     private String phoneNumber;
-    private int average;
+    private String average;
 }

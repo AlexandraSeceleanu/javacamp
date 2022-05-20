@@ -12,13 +12,13 @@ public class TeacherRepository {
 
     static {
         storage.put(3, Teacher.builder()
-               // .classes(Collections.singleton("matematica"))
+                .classes(Collections.singleton("matematica"))
                 .name("Ionescu")
                 .id(3)
                 .collegeId(1)
                 .build());
         storage.put(4, Teacher.builder()
-                //.classes(Collections.singleton("fizica"))
+                .classes(Collections.singleton("fizica"))
                 .name("Popescu")
                 .id(4)
                 .collegeId(2)
