@@ -1,6 +1,7 @@
 package com.alex.javacamp.repository;
 
 import com.alex.javacamp.domain.Application;
+import com.google.common.collect.ImmutableSet;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -16,14 +17,14 @@ public class ApplicationRepository {
         storage.put(30, Application.builder()
                 .candidateId(11)
                 .collegeId(1)
-                .examId(Collections.singleton("21"))
+                .examId(ImmutableSet.of("21"))
                 .id(30)
                 .status("rejected")
                 .build());
         storage.put(31, Application.builder()
                 .candidateId(10)
                 .collegeId(1)
-                .examId(Collections.singleton("20"))
+                .examId(ImmutableSet.of("20"))
                 .id(31)
                 .status("accepted")
                 .build());

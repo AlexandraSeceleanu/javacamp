@@ -1,6 +1,7 @@
 package com.alex.javacamp.repository;
 
 import com.alex.javacamp.domain.Teacher;
+import com.google.common.collect.ImmutableSet;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -12,13 +13,13 @@ public class TeacherRepository {
 
     static {
         storage.put(3, Teacher.builder()
-                .classes(Collections.singleton("matematica"))
+                .classes(ImmutableSet.of("matematica", "fizica"))
                 .name("Ionescu")
                 .id(3)
                 .collegeId(1)
                 .build());
         storage.put(4, Teacher.builder()
-                .classes(Collections.singleton("fizica"))
+                .classes(ImmutableSet.of("fizica"))
                 .name("Popescu")
                 .id(4)
                 .collegeId(2)
