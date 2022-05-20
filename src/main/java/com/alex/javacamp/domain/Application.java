@@ -1,7 +1,15 @@
 package com.alex.javacamp.domain;
 
-import java.util.Set;
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
+import java.util.Set;
+@Setter
+@Getter
+@Builder
+@EqualsAndHashCode
 public class Application {
     private int id;
     private int collegeId;
