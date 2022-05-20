@@ -1,9 +1,7 @@
 package com.alex.javacamp.controller;
 
 import com.alex.javacamp.domain.Candidate;
-import com.alex.javacamp.domain.College;
 import com.alex.javacamp.repository.CandidateRepository;
-import com.alex.javacamp.repository.CollegeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
