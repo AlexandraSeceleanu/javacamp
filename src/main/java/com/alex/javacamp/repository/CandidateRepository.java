@@ -1,7 +1,6 @@
 package com.alex.javacamp.repository;
 
 import com.alex.javacamp.domain.Candidate;
-import com.alex.javacamp.domain.College;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
