@@ -14,6 +14,8 @@ public class Exam {
     private int id;
     private String subject;
     private String status;
+    private int applicationId;
+
     //status: present, absent
 
 }

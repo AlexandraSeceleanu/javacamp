@@ -21,9 +21,9 @@ public class ApplicationController {
         return applicationRepository.findAll();
     }
 
-    @GetMapping("/api/applications/{id}")
-    public Application getById(@PathVariable("id") int id) {
-        return applicationRepository.findById(id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, String.format("Application with id=%s not found", id)));
+    @GetMapping("/api/applications/{applicationsId}")
+    public Application getByapplicationsId(@PathVariable("applicationsId") int applicationsId) {
+        return applicationRepository.findById(applicationsId)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, String.format("Application with applicationsId=%s not found", applicationsId)));
     }
 }

@@ -16,12 +16,14 @@ public class ExamRepository {
                     .note("9.50")
                     .status("present")
                     .subject("matematica")
+                    .applicationId(30)
                     .build());
             storage.put(21, Exam.builder()
                     .id(21)
                     .note("0.00")
                     .status("absent")
                     .subject("matematica")
+                    .applicationId(31)
                     .build());
         }
 

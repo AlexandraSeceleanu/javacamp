@@ -11,7 +11,7 @@ import java.util.Set;
 @Builder
 @EqualsAndHashCode
 public class Application {
-    private int id;
+    private int ApplicationId;
     private int collegeId;
     private int candidateId;
     private Set<String> examId;
