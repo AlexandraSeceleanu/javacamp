@@ -13,14 +13,14 @@ public class CandidateRepository {
     private static ConcurrentHashMap<Integer, Candidate> storage = new ConcurrentHashMap<>();
     static {
         storage.put(10, Candidate.builder()
-                .nume("Ioana")
+                .name("Ioana")
                 .candidateId(10)
                 .address("Craiova")
                 .average("9.20")
                 .phoneNumber("0788534091")
                 .build());
         storage.put(11, Candidate.builder()
-                .nume("Alex")
+                .name("Alex")
                 .candidateId(11)
                 .address("Iasi")
                 .average("8.70")

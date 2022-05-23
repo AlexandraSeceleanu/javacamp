@@ -10,7 +10,7 @@ import lombok.Setter;
 @Builder
 @EqualsAndHashCode
 public class Candidate {
-    private String nume;
+    private String name;
     private int candidateId;
     private String address;
     private String phoneNumber;
