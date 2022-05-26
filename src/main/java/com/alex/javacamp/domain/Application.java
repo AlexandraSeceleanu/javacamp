@@ -16,5 +16,5 @@ public class Application {
     private int candidateId;
     private Set<String> examId;
     private String status;
-    // status : accepted , rejected
+    // status : accepted, pending, rejected
 }

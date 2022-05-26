@@ -9,7 +9,9 @@ import lombok.Setter;
 @Getter
 @Builder
 @EqualsAndHashCode
+
 public class Exam {
+
     private String note;
     private int id;
     private String subject;
