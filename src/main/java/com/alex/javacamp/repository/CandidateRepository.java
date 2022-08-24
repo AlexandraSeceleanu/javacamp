@@ -40,4 +40,7 @@ public class CandidateRepository {
         candidate.setCandidateId(candidate.hashCode());
         return storage.put(candidate.hashCode(), candidate);
     }
+    public static Candidate addCandidate(Candidate newCandidate){
+        newCandidate.setCandidateId(Integer.parseInt(" 12 "));
+                return newCandidate;}
 }
