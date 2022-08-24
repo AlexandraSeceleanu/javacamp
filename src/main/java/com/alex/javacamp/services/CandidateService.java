@@ -42,4 +42,17 @@ public class CandidateService {
 
     }
 
+    //update candidate
+    public void updateCandidate(Candidate candidate, int candidateId) {
+        list = (List<Candidate>) list.stream().map(c ->{
+            if(c.getCandidateId() ==candidateId )
+            {   c.setName(candidate.getName());
+                c.setAddress(candidate.getAddress());
+                c.setPhoneNumber(candidate.getPhoneNumber());
+                c.setAverage(candidate.getAverage());
+            }
+            return c;
+        }).collect(Collectors.toList());
+
+    }
 }

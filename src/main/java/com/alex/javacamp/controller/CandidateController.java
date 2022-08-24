@@ -35,9 +35,18 @@ public class CandidateController {
         return c;
     }
 
-    @DeleteMapping("/api/candidates/{candidateId}/delete")
+    @DeleteMapping("/api/candidates/{candidateId}")
     public void deleteCandidate(@PathVariable ("candidateId") int candidateId){
         this.candidateService.deleteCandidate(candidateId);
 
     }
+
+    @PutMapping("/api/candidates/{candidateId}")
+        public Candidate updateCandidate(@RequestBody Candidate candidate,
+        @PathVariable("candidateId") int candidateId){
+        this.candidateService.updateCandidate(candidate, candidateId);
+        return candidate;
+
+    }
+
 }
